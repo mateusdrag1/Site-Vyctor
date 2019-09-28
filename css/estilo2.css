@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url('/img/background-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    font-family: "Open Sans";
+    background-color: silver;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+#all{
+    margin: 20px 70px;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: -16px;
+    margin-left: 33%;
+}
+
+#optionHeader{
+    position: absolute;
+    right: 38%;
+    border-bottom: 2px solid darkgray;
+}
+button {
+    background-color: darkgray;
+    border: 2px solid gray;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 16px !important;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:hover{
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+#middle{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#leftMiddle{
+    position: absolute;
+    left: 6%;
+    margin-top: 10%;
+}
+
+#leftMiddle img{
+   margin-bottom: 50px;
+   transition: 0.5s all;
+   -webkit-transition: 0.5s all;
+}
+
+#leftMiddle:hover img{
+    transform: scale(1.1);
+}
+
+#profileMiddle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 110px;
+}
+
+@keyframes movelogoprofile{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    75%{transform: scale(0.9)}
+    100%{transform: scale(1)}
+}
+
+#profileMiddle img#profileImg{
+    width: 195px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#profileMiddle img#profileImg:hover{
+    animation: movelogoprofile 1s;
+}
+
+#profileTexts{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#name{
+    font-size: 15pt;
+    color: #454D66;
+}
+
+#curso{
+    color: #7A7A7A;
+    font-size: 12pt;
+    font-weight: 300;
+}
+#frase{
+    color: rgb(88, 86, 86);
+    font-size: 12pt;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 10px;
+}
+.copyright{
+    text-align: center!important;
+    overflow: hidden;
+    color: darkgrey;
+    background-color: black;
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    margin-top: 219px;
+}
+
+@media all and (max-width:1200px) {
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #optionHeader{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: 7%;
+        position: unset;
+    }
+}
+
+@media all and (max-width: 650px){
+    #optionHeader{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: -30%;
+        width: 210px;
+        margin-top: 20%;
+    }
+}
+
+@media all and (max-width: 400px){
+    #optionHeader{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: -50%;
+        width: 210px;
+        margin-top: 20%;
+    }
+}
